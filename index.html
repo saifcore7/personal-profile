@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAIF ALI KHAN</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://kit.fontawesome.com/d250fc90c9.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="header">
     <div class="container">
     <nav>
-        <img src="saif-images/logo.jpg" class="logo">
+        
+        <img src="saif-images/logo-saif.png" class="logo">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+         var nav= document.querySelector("nav");  
+         nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    
     <div class="header-text">
         <span class="auto-type"></span>
         <h1>Hey, I'm <span>Saif</span><br>from India.</h1>
@@ -31,8 +39,8 @@
     <script>
         var typed = new Typed(".auto-type", {
             strings: ["Web Developer", "Freelancer","Programmer"],
-            typeSpeed: 200,
-            backSpeed: 100,
+            typeSpeed: 150,
+            backSpeed: 50,
             loop: true
 
         })
@@ -40,7 +48,7 @@
    </div>
  </div>
  <!-------About------->
- <div id="about">
+ <div id ="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -48,7 +56,7 @@
                 </div>
                 <div class="about-col-2">
                 <h1 class="sub-title">
-                    About 
+                   About 
                 </h1>
                 <p>
                    My name is <span>Saif Ali Khan</span>, I have completed my schooling ,from 
@@ -91,11 +99,84 @@
         <h1 class="sub-title">Services</h1>
         <div class="services-list">
             <div>
-                <h2></h2>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>
+                     Every business owner always wonders what affordable Web Design and Development Services agencies offer that can help grow their business. 
+                     Most local website design companies rates are extremely high.Contact me because, I create professionally working websites at affordable rates that ensure a return value for your business. 
+                     and see wheter, I am a great fit to help you build and grow your digital presence.
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
             </div>
+            <div>
+                <i class="fa-brands fa-youtube"></i>
+                <h2>Content Creation</h2>
+                <p>
+                     Every business owner always wonders what affordable Web Design and Development Services agencies offer that can help grow their business. 
+                     Most local website design companies rates are extremely high.Contact me because, I create professionally working websites at affordable rates that ensure a return value for your business. 
+                     and see wheter, I am a great fit to help you build and grow your digital presence.
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Video Editing</h2>
+                <p>
+                     Every business owner always wonders what affordable Web Design and Development Services agencies offer that can help grow their business. 
+                     Most local website design companies rates are extremely high.Contact me because, I create professionally working websites at affordable rates that ensure a return value for your business. 
+                     and see wheter, I am a great fit to help you build and grow your digital presence.
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Adobe Photoshop</h2>
+                <p>
+                     Every business owner always wonders what affordable Web Design and Development Services agencies offer that can help grow their business. 
+                     Most local website design companies rates are extremely high.Contact me because, I create professionally working websites at affordable rates that ensure a return value for your business. 
+                     and see wheter, I am a great fit to help you build and grow your digital presence.
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+            </div>
+       </div>
+     </div>
     </div>
- </div>
- <script>
+    <!-- -------------portfolio-------------- -->
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="saif-images/work1.jpg" >
+                    <div class="layer">
+                        <h3>Responsive Website</h3>
+                        <p>I made a very smooth and decent statically responsive website for our company Siss Interactives.
+                            Go check it out & give your feedbacks by sending me a message , below in the contact section.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="saif-images/work-2.png" >
+                    <div class="layer">
+                        <h3>Responsive Website</h3>
+                        <p>I made a very smooth and decent statically responsive website for our company Siss Interactives.
+                            Go check it out & give your feedbacks by sending me a message , below in the contact section.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="saif-images/work-3.png" >
+                    <div class="layer">
+                        <h3>Responsive Website</h3>
+                        <p>I made a very smooth and decent statically responsive website for our company Siss Interactives.
+                            Go check it out & give your feedbacks by sending me a message , below in the contact section.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tabname){
